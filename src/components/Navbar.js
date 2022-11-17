@@ -1,9 +1,13 @@
-/* <!-- Navbar --> */
-<nav className="navbar">
-  <div className="container">
-    <title>LAB - WikiCountries</title>
-    <a className="navbarBrand" href="/">
-      WikiCountries
-    </a>
-  </div>
-</nav>;
+import { Link } from 'react-router-dom';
+
+function Navbar() {
+  return (
+    <nav>
+      <div>
+        <Link to="/">Home</Link>
+        <h1>LAB - WikiCountries</h1>
+      </div>
+    </nav>
+  );
+}
+export default Navbar;
